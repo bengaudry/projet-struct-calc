@@ -102,22 +102,25 @@ def is_operation_immediate(op: str):
 
 
 def get_operation_code(op: str):
+    if is_operation_immediate(op):
+        return get_operation_code(op.removesuffix("i"))
+
     match op:
-        case "ADD" | "ADDi" | "LD" | "JMP":
+        case "ADD" | "LD" | "JMP":
             return "000"
-        case "SUB" | "SUBi" | "ST" | "JEQU":
+        case "SUB" | "ST" | "JEQU":
             return "001"
-        case "AND" | "ANDi" | "JNEQ":
+        case "AND" | "JNEQ":
             return "010"
-        case "OR" | "ORi" | "JSUP":
+        case "OR" | "JSUP":
             return "011"
-        case "XOR" | "XORi" | "JINF":
+        case "XOR" | "JINF":
             return "100"
-        case "SL" | "SLi" | "CALL":
+        case "SL" | "CALL":
             return "101"
-        case "SR" | "SRi" | "RET":
+        case "SR" | "RET":
             return "110"
-        case "MUL" | "MULi":
+        case "MUL":
             return "111"
         case _:
             print_error("Unknown operation " + op)
