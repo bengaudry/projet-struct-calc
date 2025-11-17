@@ -127,8 +127,7 @@ def get_operation_code(op: str):
 
 
 def get_operation_category(op: str):
-    if (op in ARITHMETIC_OPERATIONS
-        or (op.endswith("i") and (op.removesuffix("i") in ARITHMETIC_OPERATIONS))):
+    if (op in ARITHMETIC_OPERATIONS or is_operation_immediate(op)):
         return "00"
     
     if op in MEM_OPERATIONS: return "01"
