@@ -6,13 +6,16 @@ FAIT :
 + Gérer les labels dans l'assembleur
 + Gérer les opérations CTRL dans l'assembleur
 + Gérer les opérations MEM dans l'assembleur
++ Créer des tests pour l'assembleur
++ Composant pour gérer les JMP (vérifier les conditions) -> JMPCond
++ Composant GetADDR
 
 A FAIRE :
 - Tester les 3 composants précédents
-- Créer des tests pour l'assembleur
-- Composant pour gérer les JMP (vérifier les conditions) -> JMPCond
-- Composant GetADDR
+- Tester JSUP et JINF
 - Composant Pile
+    -> RAM pour stocker la pile
+    -> Registre SP pour le stack pointer
 - Fichier de compte rendu (réponses aux questions)
 - Docs https://docs.google.com/document/d/1hAzsGyHSP7FDqS5E7n3U-pQMMv79f4NiPNKKGX78PyI/edit?hl=fr&tab=t.0
 
