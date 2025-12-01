@@ -67,6 +67,7 @@ def print_error(msg: str):
     global current_line_index
     print("Error at line " + str(current_line_index) + " :")
     print(msg)
+    print(labels)
     sys.exit(1)
 
 
@@ -236,7 +237,7 @@ def analyse_labels(code_lines):
         if line.startswith("@"): # ignore comments
             continue
         
-        keys = line.split(" ")
+        keys = line.split()
         keys = [key for key in keys if key != '' and key != ' ']
         
         if len(keys) == 0: continue
