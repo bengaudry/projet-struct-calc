@@ -1,3 +1,9 @@
+@ PROGRAMME DE TEST
+
+@ Valeur des registres attendue :
+@ R0 <- 5
+@ R1 <- 5
+
         XOR R0 R0 R0
         ADDi R0 R0 5
 
