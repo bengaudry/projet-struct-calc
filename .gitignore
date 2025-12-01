@@ -3,3 +3,5 @@ projet.pdf
 *.bin
 *.hex
 __pycache__
+git.txt
+todo.txt

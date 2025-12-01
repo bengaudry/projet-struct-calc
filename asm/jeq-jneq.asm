@@ -1,3 +1,6 @@
+@ PROGRAMME DE TEST POUR LES INSTRUCTIONS
+@ JEQ et JNEQ
+
 @ Valeur des registres attendue : 
 @ R0 <- 5
 @ R1 <- 5

@@ -193,9 +193,9 @@ def process_line(keys: list[str]):
             bin_code += get_register_binary(keys[3])
 
     if category == "11": # CTRL operation
-        if op == 'JMP': # no registers for JMP instruction, only label
+        if op in ['JMP', 'CALL']: # no registers for JMP instruction, only label
             bin_code += label_encoding(keys[1])
-        else:
+        elif op != 'RET':
             bin_code += get_register_binary(keys[1])
             bin_code += get_register_binary(keys[2])
             bin_code += label_encoding(keys[3])

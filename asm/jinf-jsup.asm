@@ -1,3 +1,6 @@
+@ PROGRAMME DE TEST POUR LES INSTRUCTIONS
+@ JINF et JSUP
+
 @ Valeur des registres attendue :
 @ R0 <- 0
 @ R1 <- 1
