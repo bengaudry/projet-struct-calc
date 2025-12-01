@@ -67,7 +67,6 @@ def print_error(msg: str):
     global current_line_index
     print("Error at line " + str(current_line_index) + " :")
     print(msg)
-    print(labels)
     sys.exit(1)
 
 

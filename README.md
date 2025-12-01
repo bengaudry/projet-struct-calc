@@ -25,9 +25,18 @@ Ben GAUDRY, Daniel CAILLE, Kevin BERTAUX, Wail BENSALEM
 | CTRL      | CALL | 11             | 101       |
 | CTRL      | RET  | 11             | 110       |
 
+Des commentaires peuvent être ajoutés après une instruction ou seuls 
+sur une ligne en ajoutant un '@' au début
+
 
 ## Utilisation assembleur
 
 ```sh
 python asm.py [asm_file_path]
 ```
+
+Le code compilé en hexadécimal est affiché dans la console, il faut le 
+recopier maunellement dans la RAM sur Logisim.
+
+Pour le débugage, deux fichiers : `out.hex` et `out.bin` seront aussi générés,
+avec le code en hexadécimal et en binaire.
