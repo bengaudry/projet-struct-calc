@@ -14,8 +14,8 @@
 
 jmpif1: ADDi R0 R0 1
 
-        JEQU R0 R1 jmpif2
+        JEQU R0 R1 end
         ADDi R1 R1 5
 
-jmpif2: XOR R2 R2 R2
+end:    JMP end
 

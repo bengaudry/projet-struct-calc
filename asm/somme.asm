@@ -4,10 +4,10 @@
 @ R7 <- 100
 
 MAIN:   XOR R7 R7 R7    @ sp <- 0
-		ADDi R7 R7 100  @ sp <- 100
+	ADDi R7 R7 100  @ sp <- 100
 
         XOR R1 R1 R1
-        ADDi R1 R1 3
+        ADDi R1 R1 5
 
         CALL PSH_RG     @ empile les args
         CALL SOMME
