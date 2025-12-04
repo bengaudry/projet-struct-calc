@@ -9,3 +9,5 @@
         JMP noadd
         ADDi R0 R0 5
 noadd:  ADDi R0 R0 1
+
+end:    JMP end

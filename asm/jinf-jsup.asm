@@ -14,8 +14,8 @@ main:   XOR R0 R0 R0  @ R0 <- 0
         XOR R2 R2 R2
         ADDi R2 R2 15
 
-lab1:   JINF R1 R0 lab2
+lab1:   JINF R1 R0 end
         XOR R3 R3 R3
         ADDi R3 R3 15
 
-lab2:   JMP main
+end:    JMP end
